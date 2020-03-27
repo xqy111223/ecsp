@@ -1,0 +1,40 @@
+.audience-item {
+  height: 50px;
+  line-height: 34px;
+  box-sizing: border-box;
+  padding: 8px 0px;
+  background-color: #f7f7f7;
+  > div {
+    box-sizing: border-box;
+    display: inline-block;
+    border-right: 1px solid #dcdcdc;
+    padding: 0px 20px;
+  }
+  > div:first-child {
+    width: 180px;
+    img {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+  > div:nth-child(2) {
+    width: 220px;
+  }
+  > div:nth-child(3) {
+    width: 180px;
+  }
+  > div:nth-child(4) {
+    width: 118px;
+  }
+  > div:last-child {
+    width: 150px;
+    border-right: none;
+  }
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}

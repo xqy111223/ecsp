@@ -1,0 +1,18 @@
+.audience-list-dialog {
+  .cy-driver {
+    margin: 18px 0px;
+  }
+  .el-form-item {
+    margin-bottom: 0;
+  }
+  .table-pager:after {
+    content: '人观看';
+  }
+  .audience-list-dialog__content {
+    overflow-y: auto;
+    max-height: 410px;
+  }
+  /deep/ .el-dialog > .el-dialog__body {
+    max-height: 540px;
+  }
+}

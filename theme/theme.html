@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>阔地门户主题</title>
+  <!-- 引入默认样式 -->
+  <link rel="stylesheet" href="./normalize.css">
+  <!--引入自定义图标-->
+  <link rel="stylesheet" href="../src/assets/iconfont/iconfont.css">
+  <!--引入全局主题库-->
+  <link rel="stylesheet" href="default/globalVars.css">
+  <!--引入element-ui定制样式库-->
+  <link rel="stylesheet" href="./default/css/index.css">
+  <!--引入vue框架-->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- 引入element-ui组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="../src/components/common/mixins/message-es5.js"></script>
+  <style>
+    .theme {
+      padding: 10px;
+      padding-bottom: 350px;
+    }
+
+    .demo {
+      margin-top: 20px;
+    }
+
+    .demo-content {
+      margin-top: 5px;
+      line-height: 1.8;
+      font-size: 12px;
+      padding: 18px 24px;
+      background-color: #fafafa;
+      border: 1px solid #eaeefb;
+      margin-bottom: 25px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<div id="app" class="theme">
+  <i class="iconfont el-icon-custom-add"></i>
+  <el-row class="demo">
+    <h3>01.字体颜色</h3>
+    <el-col :span="24" class="demo-content">
+      <p class="color-primary">primary</p>
+      <p class="color-normal">normal</p>
+      <p class="color-label">label</p>
+      <p class="color-disable">disable</p>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>02.字体大小</h3>
+    <el-col :span="24" class="demo-content">
+      <p class="color-primary font-small">small</p>
+      <p class="color-normal">normal</p>
+      <p class="color-label font-strong">strong</p>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>03.面包屑</h3>
+    <el-col :span="24" class="demo-content">
+      <el-breadcrumb separator-class="el-icon-arrow-right">
+        <el-breadcrumb-item :to="{ path: '/' }"><span>课表管理</span></el-breadcrumb-item>
+        <el-breadcrumb-item><span class="disable">编辑课表</span></el-breadcrumb-item>
+      </el-breadcrumb>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>04.按钮</h3>
+    <el-col :span="24" class="demo-content">
+      <label>默认</label>
+      <el-tooltip content="新增type='default'，class 添加'no-radius'样式">
+        <el-button size="mini" type="custom" class="no-radius">设置</el-button>
+      </el-tooltip>
+      <el-button size="mini" type="custom" class="no-radius">上传图片</el-button>
+      <el-button size="mini" type="custom" class="no-radius" icon="el-icon-refresh-right">重新上传</el-button>
+      <el-button size="mini" type="custom" class="no-radius">设置上课时间</el-button>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>使用iconfont按钮</label>
+      <el-button size="mini" type="custom" class="no-radius" icon="el-icon-custom-re-upload">自定义按钮</el-button>
+      <el-button size="small" type="custom" class="no-radius" icon="el-icon-custom-re-upload">自定义小</el-button>
+      <el-button size="medium" type="custom" class="no-radius" icon="el-icon-custom-re-upload">自定义中等</el-button>
+      <el-button type="custom" class="no-radius" icon="el-icon-custom-re-upload">自定义默认</el-button>
+      <el-button size="mini" type="default" icon="el-icon-custom-ppt">最小按钮</el-button>
+      <el-button size="small" type="primary" icon="el-icon-custom-ppt">小按钮</el-button>
+      <el-button size="medium" type="success" icon="el-icon-custom-ppt">中等大小</el-button>
+      <el-button type="info" icon="el-icon-custom-ppt">默认大小</el-button>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>大圆角</label>
+      <el-button size="mini" type="custom" round>删除</el-button>
+      <el-button size="mini" type="custom" round>更换</el-button>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>其他颜色，小圆角</label>
+      <el-button size="mini" type="success">查询</el-button>
+      <el-button size="mini" type="primary">应用</el-button>
+      <el-button size="mini" type="info">取消</el-button>
+      <el-button size="mini" type="danger">删除</el-button>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>按钮大小</label>
+      <el-button size="mini" type="default">最小按钮</el-button>
+      <el-button size="small" type="primary">小按钮</el-button>
+      <el-button size="medium" type="success">中等大小</el-button>
+      <el-button type="info">默认大小</el-button>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>05.文字可点击</h3>
+    <el-col class="demo-content" :span="24">
+      <a type="text">更多课程</a>
+      <a type="link">数学查漏补缺</a>
+      <a type="btn">点播</a>
+      <a type="btn">编辑</a>
+      <a type="btn" color="primary">点播</a>
+      <a type="btn" color="primary">编辑</a>
+      <a type="btn" color="danger">删除</a>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>06.翻页</h3>
+    <el-col :span="24" class="demo-content">
+      <label>完整</label>
+      <el-pagination background layout="prev, pager, next, jumper,slot" :pager-count="5" :total="1000">
+        <el-button type="primary">确定</el-button>
+      </el-pagination>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>简单</label>
+      <el-pagination layout="prev,slot, next" :current-page.sync="pager.index"
+                     :total="pager.total">
+        <template v-slot>
+          <span>{{`${pager.index}/${Math.ceil( pager.total / pager.size)}`}}</span>
+        </template>
+      </el-pagination>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>07.标签</h3>
+    <el-col :span="24" class="demo-content">
+      <label>自定义</label>
+      <el-tag closable type="default">
+        阔地教育-接受教室2-王老师
+      </el-tag>
+      <el-tag type="danger" class="round">
+        已解散
+      </el-tag>
+      <el-tag type="primary" class="round">
+        已毕业
+      </el-tag>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>其他官方</label>
+      <el-tag
+        v-for="tag in tags"
+        :key="tag.name"
+        closable
+        :type="tag.type">
+        {{tag.name}}
+      </el-tag>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>08.单选、复选</h3>
+    <el-col :span="24" class="demo-content">
+      <el-checkbox-group v-model="checkList">
+        <el-checkbox label="复选框 A"></el-checkbox>
+        <el-checkbox label="复选框 B"></el-checkbox>
+        <el-checkbox label="复选框 C"></el-checkbox>
+      </el-checkbox-group>
+      <el-radio v-model="radio" label="1">备选项</el-radio>
+      <el-radio v-model="radio" label="2">备选项</el-radio>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>09.头像</h3>
+    <el-col :span="24" class="demo-content">
+      <label>头像的大小尺寸，使用者自行定义</label><br>
+      <el-avatar v-for="size in sizeList" :size="size" :src="circleUrl"></el-avatar>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>10.表格</h3>
+    <el-col :span="24" class="demo-content">
+      <label>默认表格</label>
+      <el-table
+        :data="tableData"
+        row-class-name="table-body-default"
+        header-row-class-name="table-header-default"
+        stripe
+        style="width: 100%">
+        <el-table-column
+          type="selection"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          sortable
+          label="课程名称">
+        </el-table-column>
+        <el-table-column
+          prop="time"
+          label="上课时间"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="minute"
+          label="课程时长"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="class"
+          sortable
+          label="年级">
+        </el-table-column>
+        <el-table-column
+          prop="subject"
+          label="学科">
+        </el-table-column>
+        <el-table-column
+          prop="teacher"
+          label="主讲教师">
+        </el-table-column>
+        <el-table-column
+          prop="school"
+          sortable
+          label="主讲学校">
+        </el-table-column>
+        <el-table-column
+          fixed="right"
+          label="操作"
+          width="120">
+          <template slot-scope="scope">
+            <a type="btn">点播</a>
+            <a type="btn">编辑</a>
+            <a type="btn" color="danger">删除</a>
+          </template>
+        </el-table-column>
+      </el-table>
+    </el-col>
+    <el-col :span="24" class="demo-content">
+      <label>固定首尾列，美化滚动条</label>
+      <el-table
+        :data="tableData"
+        row-class-name="table-body-default"
+        header-row-class-name="table-header-default"
+        stripe
+        style="width: 35%">
+        <el-table-column
+          type="selection"
+        >
+        </el-table-column>
+        <el-table-column
+          fixed
+          prop="name"
+          label="课程名称">
+        </el-table-column>
+        <el-table-column
+          prop="time"
+          label="上课时间"
+          width="100"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="minute"
+          label="课程时长"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="class"
+          label="年级">
+        </el-table-column>
+        <el-table-column
+          prop="subject"
+          label="学科">
+        </el-table-column>
+        <el-table-column
+          prop="teacher"
+          label="主讲教师">
+        </el-table-column>
+        <el-table-column
+          prop="school"
+          label="主讲学校">
+        </el-table-column>
+        <el-table-column
+          fixed="right"
+          label="操作"
+          width="120">
+          <template slot-scope="scope">
+            <a type="btn">点播</a>
+            <a type="btn">编辑</a>
+            <a type="btn" color="danger">删除</a>
+          </template>
+        </el-table-column>
+      </el-table>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>弹出组件</h3>
+    <el-col class="demo-content" :span="24">
+      <label>信息框</label>
+      <el-button @click="showMessage()">打开无图标框</el-button>
+      <el-button @click="showMessage('info')">打开信息框</el-button>
+      <el-button @click="showMessage('warning')">打开警告框</el-button>
+      <el-button @click="showMessage('success')">打开成功框</el-button>
+      <el-button @click="showMessage('error')">打开异常框</el-button>
+      <el-button @click="showMessageLabelInfo()">打开带子描述的框</el-button>
+    </el-col>
+    <el-col class="demo-content" :span="24">
+      <label>确认框</label>
+      <el-button @click="showConfirm(1)">风格1</el-button>
+      <el-button @click="showConfirm(2)">风格2</el-button>
+      <el-button @click="showConfirm(3)">风格3</el-button>
+      <el-button @click="showConfirm(1,'none')">风格1没有Icon</el-button>
+      <el-button @click="showConfirmCustom()">风格3自定义彩色内容</el-button>
+    </el-col>
+    <el-col class="demo-content" :span="24">
+      <label>Dialog框</label>
+      <el-button @click="visible=!visible">弹出框页面</el-button>
+      <el-dialog :visible.sync="visible" title="新增课程">
+        <span>这是一段信息</span>
+        <span slot="footer" class="dialog-footer">
+          <el-button type="info" size="mini" @click="visible = false">取 消</el-button>
+          <el-button type="primary" size="mini" @click="visible = false">确 定</el-button>
+        </span>
+      </el-dialog>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>输入组件</h3>
+    <el-col class="demo-content" :span="24">
+      <label>基础框</label>
+      <el-input size="flat" placeholder="flat默认大小150px" prefix-icon="el-icon-custom-ppt"></el-input>
+      <el-input size="flat-large" placeholder="flat-large默认大小300px" suffix-icon="el-icon-custom-ppt"></el-input>
+      <el-input size="flat-large" placeholder="请输入内容" suffix-icon="el-icon-search"></el-input>
+      <label>下拉框</label>
+      <el-select v-model="value" size="flat" placeholder="flat 请选择">
+        <el-option
+          v-for="item in options"
+          :key="item.value"
+          :label="item.label"
+          :value="item.value">
+        </el-option>
+      </el-select>
+    </el-col>
+    <el-col class="demo-content" :span="24">
+      <label>日期框</label>
+      <el-date-picker
+        v-model="value3"
+        size="date-flat"
+        type="date"
+        placeholder="选择日期">
+      </el-date-picker>
+      <label>组合日期框</label>
+      <el-date-picker
+        v-model="value2"
+        type="daterange"
+        align="right"
+        size="flat"
+        unlink-panels
+        range-separator="至"
+        start-placeholder="开始日期"
+        end-placeholder="结束日期">
+      </el-date-picker>
+      <label>省市区级联</label>
+      <el-cascader
+        v-model="value4"
+        size="flat"
+        :options="areaList"></el-cascader>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>分割线</h3>
+    <el-col class="demo-content" :span="24">
+      <div class="cy-driver"></div>
+    </el-col>
+  </el-row>
+  <el-row class="demo">
+    <h3>表格头数据</h3>
+    <el-col class="demo-content" :span="24">
+      <span class="table-pager">34</span>
+    </el-col>
+  </el-row>
+</div>
+<script>
+
+
+new Vue({
+  el: '#app',
+  mixins: [MessageMixin],
+  data: function () {
+    return {
+      pager: {
+        total: 84,
+        index: 1,
+        size: 10
+      },
+      radio: 1,
+      checkList: [],
+      tags: [
+        { name: '标签一', type: '' },
+        { name: '标签二', type: 'success' },
+        { name: '标签三', type: 'info' },
+        { name: '标签四', type: 'warning' },
+        { name: '标签五', type: 'danger' }
+      ],
+      circleUrl: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
+      squareUrl: 'https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png',
+      sizeList: ['large', 'medium', 'small'],
+      tableData: [
+        {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }, {
+          name: '英语口语学习',
+          time: '2019-02-21 10:12',
+          minute: 45,
+          class: '三年级',
+          subject: '语文',
+          teacher: '王老师',
+          school: '苏州一中'
+        }],
+      visible: false,
+      options: [
+        {
+          value: '选项1',
+          label: '黄金糕'
+        }, {
+          value: '选项2',
+          label: '双皮奶'
+        }, {
+          value: '选项3',
+          label: '蚵仔煎'
+        }, {
+          value: '选项4',
+          label: '龙须面'
+        }, {
+          value: '选项5',
+          label: '北京烤鸭'
+        }],
+      value: '',
+      value2: '',
+      value3: '',
+      value4: '',
+      areaList: [
+        {
+          value: '10000',
+          label: '江苏省',
+          children: [
+            {
+              value: '100001',
+              label: '苏州市',
+              children: [{
+                value: '1000011',
+                label: '相城区',
+              }, {
+                value: '1000012',
+                label: '工业园区',
+              }, {
+                value: '1000013',
+                label: '吴中区',
+              }]
+            }, {
+              value: '100002',
+              label: '南京市',
+            }],
+        },
+        {
+          value: '20000',
+          label: '浙江省'
+        }
+      ]
+    }
+  },
+  methods: {
+    showMessage (type) {
+      this.showMsgBox({
+        message: '这是个提示信息，你就按照这样用就行！',
+        type: type
+      })
+    },
+    showMessageLabelInfo () {
+      this.showMsgBox({
+        message: '这是个提示信息，你就按照这样用就行！',
+        type: 'warning',
+        desc: '这是一些描述文字哦~ ~'
+      })
+    },
+    showConfirm (style, type) {
+      this.showConfirmBox({
+        message: '是否确定删除该资源？',
+        title: '删除',
+        type: type || 'warning',
+        style: style || 0
+      }).then(r => console.log('确定', r)).catch(e => console.log('取消', e))
+    },
+    showConfirmCustom () {
+      this.showConfirmBox({
+        message: [
+          { text: '主讲教师宋小兵的【英语口语学习】课程', type: 'primary' },
+          '将被删除，',
+          '"',
+          {
+            text: '删除操作无法恢复',
+            type: 'danger'
+          },
+          '"',
+          '，您是否还要继续？'
+        ],
+        title: '删除',
+        type: 'warning',
+        style: 3
+      })
+    }
+  }
+})
+</script>
+</body>
+</html>

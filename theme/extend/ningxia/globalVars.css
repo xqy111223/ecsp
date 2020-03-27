@@ -1,0 +1,10 @@
+/*阔地业务组件全局变量，包含业务主题色变量*/
+:root {
+  --main-bg-color: red;
+  --main-bg--hover-color: rgba(52, 126, 255, 0.6);
+  --main-bg--active-color: rgba(52, 126, 255, 0.6);
+  --color1: #fbfee9;
+  --color2: #5a4446;
+  --color3: #8baca1;
+  --color4: #ffeec4;
+}

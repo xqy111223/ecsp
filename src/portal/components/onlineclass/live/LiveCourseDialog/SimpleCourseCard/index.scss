@@ -1,0 +1,13 @@
+.simple-card-card {
+  border: solid 1px #dcdcdc;
+  width: 196px;
+  padding: 10px;
+  box-sizing: border-box;
+  > div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  > div:last-child {
+    margin-bottom: 0;
+  }
+}

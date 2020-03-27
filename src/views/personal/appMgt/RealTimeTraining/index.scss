@@ -1,0 +1,129 @@
+.real-time-training {
+  // 查询
+  .search-area {
+    margin-top: 10px;
+  }
+  // 轮训列表 头部
+  .table-total {
+    font-size: 12px;
+    position: relative;
+    height: 32px;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  // 分页
+  /deep/ .pager-selected.el-pagination {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -93px;
+    .text-wrap {
+      font-size: 14px;
+      line-height: 32px;
+      width: 110px;
+      height: 32px;
+      margin: 0px 5px;
+      text-align: center;
+      border: 1px solid #dcdcdc;
+    }
+    .btn-prev, .btn-next {
+      height: 32px;
+    }
+  }
+  .inline {
+    float: left;
+    margin-right: 20px;
+  }
+  // 轮训 列表card
+  .card-list {
+    margin-right: -20px;
+    li {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      width: calc((100% - 55px) / 3);
+      height: 170px;
+      margin-right: 18px;
+      margin-bottom: 10px;
+      background-color: #eee;
+      .cl-drag {
+        line-height: 20px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        height: 20px;
+        padding: 0px 10px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .cl-info {
+        line-height: 20px;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 20px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.4);
+        span {
+          display: block;
+          overflow: hidden;
+          box-sizing: border-box;
+          width: 50%;
+          padding: 0px 5px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          word-break: keep-all;
+        }
+        .fr {
+          text-align: right;
+        }
+      }
+      &:hover .cl-info {
+        height: auto;
+      }
+    }
+  }
+  // 全屏 后展示
+  .full-screen {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    .card-list {
+      height: 100%;
+      li {
+        height: calc((100% - 65px) / 3);
+      }
+    }
+  }
+  // 轮训弹窗设置
+  .w50 {
+    margin-top: 20px;
+    width: 50px;
+    height: 32px;
+    border: solid 1px #dcdcdc;
+    border-radius: 2px;
+    /deep/ input {
+      height: 100%;
+      padding: 0 5px;
+      outline: none;
+    }
+  }
+  .c9 {
+    color: #999;
+  }
+
+}
+.mt15 {
+  margin-top: 15px;
+}

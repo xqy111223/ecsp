@@ -1,0 +1,91 @@
+.user-management {
+
+  .margin-10 {
+    margin: auto 10px;
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .pl-delete-btn {
+    margin-left: 20px;
+  }
+
+  .table-total {
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #666;
+
+    .blue {
+      color: #347eff;
+    }
+  }
+
+  .search-area {
+    @extend .margin-10;
+    padding: 18px 0;
+    border-bottom: 1px dashed #dcdcdc;
+    button {
+      margin-left: 10px;
+    }
+  }
+
+  .table-area {
+    @extend .margin-10;
+
+    .export-text-btn {
+      @extend .fr;
+      font-size: 14px;
+      cursor: pointer;
+      color: #666;
+
+      .iconfont {
+        font-size: 14px;
+        margin-right: 5px;
+        color: #999;
+      }
+    }
+  }
+
+  /deep/ .el-table__row {
+    height: 40px;
+
+    .cell {
+      white-space: nowrap;
+    }
+
+    .status-normal, .status-closed {
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .status-normal::before, .status-closed::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin-top: -3px;
+      content: '';
+      border-radius: 3px;
+      background-color: #61ca93;
+    }
+
+    .status-closed::before {
+      background-color: #bbb;
+    }
+  }
+  /deep/ .el-table__empty-block{
+    background: #fff;
+  }
+
+  .pagination-right {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+}

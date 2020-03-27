@@ -1,0 +1,27 @@
+.live-course-dialog {
+  .live-course-dialog__master {
+    > div {
+      margin-bottom: 20px;
+      span {
+        margin-right: 20px;
+      }
+      > span:last-child {
+        margin-right: 0;
+      }
+    }
+    > div:first-child {
+      font-size: 16px;
+    }
+  }
+  .live-course-dialog__receive {
+    margin-top: 20px;
+    .course-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      > div {
+        margin-top: 10px;
+      }
+    }
+  }
+}

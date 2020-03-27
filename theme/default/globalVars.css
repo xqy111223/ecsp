@@ -1,0 +1,752 @@
+@charset "UTF-8";
+/*阔地业务组件全局变量，包含业务主题色变量*/
+/* 阔地全局变量定义 */
+/* 整体主题色 */
+/*主题字体颜色 搭配$primary-color*/
+/*header等头部主题色*/
+/*header等头部移入色*/
+/*header等头部按钮 点击色*/
+/* 字体类 */
+/*字体默认状态*/
+/*鼠标移入状态*/
+/*字体不可点状态*/
+/*字体 ，描述说明等 label*/
+/*字体，警告类 */
+:root {
+  --primary-color: #347EFF;
+  /* 整体主题色 */
+  --font-theme-font-color: #FFFFFF;
+  /*主题字体颜色 搭配$primary-color*/
+  --main-bg-color: rgba(52, 126, 255, 1);
+  /*header等头部主题色*/
+  --main-bg--hover-color: rgba(51, 92, 255, 0.4);
+  /*header等头部移入色*/
+  --main-bg--active-color: #335cff;
+  /*header等头部按钮 点击色*/
+  --font-normal-color: #333333;
+  /*字体默认状态*/
+  --font-hover-color: #347EFF;
+  /*鼠标移入状态*/
+  --font-disable-color: #999999;
+  /*字体不可点状态*/
+  --font-label-color: #666666;
+  /*字体 ，描述说明等 label*/
+  --font-danger-color: #FF5050;
+  /*字体，警告类 */
+  --font-small-size: 12px;
+  --font-normal-size: 14px;
+  --font-strong-size: 18px;
+}
+
+.cy-info {
+  background: #347EFF;
+  background: var(--primary-color);
+  color: #FFFFFF;
+  color: var(--font-theme-font-color);
+}
+
+/* 阔地互动课堂子平台默认主题 */
+/* Transition
+-------------------------- */
+/* Codyy Color
+------------------------- */
+/* Color
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Link
+-------------------------- */
+/* Border
+-------------------------- */
+/* Fill
+-------------------------- */
+/* Typography
+-------------------------- */
+/* Size
+-------------------------- */
+/* z-index
+-------------------------- */
+/* Disable base
+-------------------------- */
+/* Icon
+-------------------------- */
+/* Checkbox
+-------------------------- */
+/* Radio
+-------------------------- */
+/* Select
+-------------------------- */
+/* Alert
+-------------------------- */
+/* MessageBox
+-------------------------- */
+/* Message
+-------------------------- */
+/* Notification
+-------------------------- */
+/* Input
+-------------------------- */
+/* Cascader
+-------------------------- */
+/* Group
+-------------------------- */
+/* Tab
+-------------------------- */
+/* Button
+-------------------------- */
+/* cascader
+-------------------------- */
+/* Switch
+-------------------------- */
+/* Dialog
+-------------------------- */
+/* Table
+-------------------------- */
+/* Pagination
+-------------------------- */
+/* Popup
+-------------------------- */
+/* Popover
+-------------------------- */
+/* Tooltip
+-------------------------- */
+/* Tag
+-------------------------- */
+/* Tree
+-------------------------- */
+/* Dropdown
+-------------------------- */
+/* Badge
+-------------------------- */
+/* Card
+--------------------------*/
+/* Slider
+--------------------------*/
+/* Steps
+--------------------------*/
+/* Menu
+--------------------------*/
+/* Rate
+--------------------------*/
+/* DatePicker
+--------------------------*/
+/* Loading
+--------------------------*/
+/* Scrollbar
+--------------------------*/
+/* Carousel
+--------------------------*/
+/* Collapse
+--------------------------*/
+/* Transfer
+--------------------------*/
+/* Header
+  --------------------------*/
+/* Footer
+--------------------------*/
+/* Main
+--------------------------*/
+/* Timeline
+--------------------------*/
+/* Backtop
+--------------------------*/
+/* Link
+--------------------------*/
+/* Calendar
+--------------------------*/
+/* Form
+-------------------------- */
+/* Avatar
+--------------------------*/
+/* Break-point
+--------------------------*/
+/*字体颜色全局样式封装*/
+.color-primary {
+  color: #347EFF;
+  color: var(--font-hover-color); }
+
+.color-normal {
+  color: #333333;
+  color: var(--font-normal-color); }
+
+.color-disable {
+  color: #999999;
+  color: var(--font-disable-color); }
+
+.color-label {
+  color: #666666;
+  color: var(--font-label-color); }
+
+/*字体大小全局样式*/
+.font-small {
+  font-size: 12px;
+  font-size: var(--font-small-size); }
+
+.font-normal {
+  font-size: 14px;
+  font-size: var(--font-normal-size);
+}
+
+.font-strong {
+  font-size: 18px;
+  font-size: var(--font-strong-size);
+}
+
+.auto-hide {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty {
+  visibility: hidden;
+  height: 0px !important;
+  min-height: 0px !important;
+  max-height: 0px !important;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Codyy Custom Style
+--------------------------*/
+body {
+  font-size: 14px;
+  color: #333333;
+  /* 分割线 */
+  /* 表格头部数据 */
+  /* 美化滚动条 */
+}
+
+body [class^="el-icon-custom-"], body [class*=" el-icon-custom-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body .cy-driver {
+  width: 100%;
+  height: 1px;
+  background-image: linear-gradient(to right, #dcdcdc 0%, #dcdcdc 50%, transparent 50%);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
+
+body .table-pager {
+  display: inline-block;
+  font-size: 14px;
+  color: #347EFF;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+body .table-pager::before {
+  font-size: 14px;
+  content: '共';
+  display: inline-block;
+  color: #666666;
+}
+
+body .table-pager::after {
+  font-size: 14px;
+  content: '条数据';
+  display: inline-block;
+  color: #666666;
+}
+
+body ::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 8px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 12px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #dcdcdc;
+  /* 滚动条颜色 */
+}
+
+body ::-webkit-scrollbar-track {
+  /* 滚动条里面轨道 */
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background: #eee;
+}
+
+body .el-breadcrumb__inner.is-link {
+  font-weight: normal;
+}
+
+body .el-breadcrumb__item:last-child .el-breadcrumb__inner {
+  color: #999999;
+}
+
+body .el-breadcrumb__item:last-child .el-breadcrumb__inner:hover, body .el-breadcrumb__item:last-child .el-breadcrumb__inner:focus, body .el-breadcrumb__item:last-child .el-breadcrumb__inner:active {
+  color: #999999;
+}
+
+body .el-button.no-radius {
+  border-radius: 0px;
+}
+
+body .el-button--custom {
+  background-color: #f5f8fa;
+}
+
+body .el-button--custom:hover, body .el-button--custom:focus {
+  background-color: #347EFF;
+  color: #FFFFFF;
+}
+
+body .el-button--custom:hover i, body .el-button--custom:focus i {
+  color: #FFFFFF;
+}
+
+body .el-button--custom i {
+  color: #39bd78;
+}
+
+body .el-button--custom:active {
+  color: #FFFFFF;
+  border-color: #2f71e6;
+  background-color: #2f71e6;
+}
+
+body .el-button--custom:active i {
+  color: #FFFFFF;
+}
+
+body .el-button.is-round {
+  color: #666666;
+}
+
+body .el-button.is-round:hover, body .el-button.is-round:focus, body .el-button.is-round:active {
+  color: #FFFFFF;
+}
+
+body .el-pagination {
+  font-weight: normal;
+}
+
+body .el-pagination.el-pagination--small .btn-prev, body .el-pagination.el-pagination--small .btn-next {
+  min-width: 22px;
+}
+
+body .el-pagination .btn-prev, body .el-pagination .btn-next {
+  border: solid 1px #dcdcdc;
+  min-width: 28px;
+  padding: 0;
+}
+
+body .el-pagination .btn-prev .el-icon, body .el-pagination .btn-next .el-icon {
+  font-size: 14px;
+}
+
+body .el-pagination span:not([class*=suffix]) {
+  text-align: center;
+}
+
+body .el-pagination.is-background .btn-prev, body .el-pagination.is-background .btn-next, body .el-pagination.is-background .el-pager li:not(.disabled) {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+}
+
+body .el-pagination.is-background .btn-prev .el-icon, body .el-pagination.is-background .btn-next .el-icon, body .el-pagination.is-background .el-pager li:not(.disabled) .el-icon {
+  font-size: 14px;
+}
+
+body .el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #c2d8ff;
+  color: #333333;
+}
+
+body .el-pagination.is-background .el-pager li:not(.disabled).active:hover, body .el-pagination.is-background .el-pager li:not(.disabled).active:focus {
+  color: #347EFF;
+}
+
+body .el-pagination.is-background button.el-button--primary {
+  margin-left: 15px;
+  background-color: #347EFF;
+}
+
+body .el-pagination.is-background button.el-button--primary:hover, body .el-pagination.is-background button.el-button--primary:focus {
+  color: #FFFFFF;
+  background-color: #71a5ff;
+}
+
+body .el-pagination.is-background button.el-button--primary:active {
+  background-color: #2f71e6;
+}
+
+body .el-pagination.is-background .el-input__inner {
+  border-radius: 0px;
+  background-color: #f6f6f6;
+}
+
+body .el-pagination.is-background span:not([class*=suffix]) {
+  text-align: center;
+}
+
+body .el-input--flat {
+  width: 150px;
+}
+
+body .el-input--flat > .el-input__inner {
+  border-radius: 0px;
+  height: 34px;
+  line-height: 34px;
+}
+
+body .el-input--flat .el-input__icon {
+  line-height: 34px;
+}
+
+body .el-input--flat-large {
+  width: 300px;
+}
+
+body .el-input--flat-large > .el-input__inner {
+  border-radius: 0px;
+  height: 34px;
+  line-height: 34px;
+}
+
+body .el-input--flat-large .el-input__icon {
+  line-height: 34px;
+}
+
+body .el-input--date-flat .el-input__inner {
+  height: 34px;
+  line-height: 34px;
+  border-radius: 0px;
+}
+
+body .el-input--date-flat .el-input__inner.el-input__inner {
+  width: 180px;
+}
+
+body .el-input--date-flat .el-input__icon {
+  line-height: 34px;
+}
+
+body .el-select--flat .el-input__icon {
+  line-height: 34px;
+}
+
+body .el-cascader .el-input {
+  width: 300px;
+}
+
+body .el-cascader--flat .el-input__icon {
+  line-height: 34px;
+  height: 34px;
+}
+
+body .el-range-editor, body .el-date-editor--daterange--flat {
+  height: 34px;
+  line-height: 34px;
+  border-radius: 0px;
+}
+
+body .el-range-editor.el-input__inner, body .el-date-editor--daterange--flat.el-input__inner {
+  width: 228px;
+}
+
+body .el-range-editor .el-range-input, body .el-date-editor--daterange--flat .el-range-input {
+  font-size: 12px;
+}
+
+body .el-range-editor .el-range-separator, body .el-range-editor .el-range__icon, body .el-range-editor .el-range__close-icon, body .el-date-editor--daterange--flat .el-range-separator, body .el-date-editor--daterange--flat .el-range__icon, body .el-date-editor--daterange--flat .el-range__close-icon {
+  max-width: 20px;
+  line-height: 24px;
+}
+
+body .el-range-editor .el-range-separator, body .el-date-editor--daterange--flat .el-range-separator {
+  padding: 0px 8px;
+}
+
+body .el-date-editor.el-input--date-flat.el-input {
+  width: 180px;
+}
+
+body .el-tag--default {
+  background-color: #c2d8ff;
+  border-color: #c2d8ff;
+  color: #000000;
+  height: 26px;
+  line-height: 26px;
+}
+
+body .el-tag--default .el-tag__close {
+  color: #FF5050;
+}
+
+body .el-tag--default .el-tag__close:hover, body .el-tag--default .el-tag__close:focus {
+  color: #FF5050;
+  background-color: #ebf2ff;
+}
+
+body .el-tag--default .el-tag__close:active {
+  background-color: #d6e5ff;
+}
+
+body .el-tag--danger.round {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 12px 0px 12px 12px;
+  background-color: #f3d7d7;
+  border-color: #f3d7d7;
+}
+
+body .el-tag--primary.round {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 12px 0px 12px 12px;
+  background-color: #c2d8ff;
+  border-color: #c2d8ff;
+}
+
+body .el-table--striped .el-table__body tr.table-body-default.el-table__row--striped td {
+  background-color: #f7f7f7;
+}
+
+body .el-table--striped .el-table__body td {
+  border-bottom: 0px;
+}
+
+body .el-table .table-header-default::after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0px;
+  width: 10px;
+  background-color: #eee;
+}
+
+body .el-table .table-header-default th {
+  font-weight: normal;
+  background-color: #eee;
+  border-bottom: 0px;
+}
+
+body .el-table .table-header-default th::after {
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -15px;
+  width: 1px;
+  background-color: #dcdcdc;
+  content: ' ';
+}
+
+body .el-table .el-table__fixed::before, body .el-table .el-table__fixed-right::before {
+  height: 0;
+}
+
+body .el-message-box {
+  border: 0px;
+  padding-bottom: 40px;
+  width: auto;
+  min-width: 320px;
+  max-width: 380px;
+}
+
+body .el-message-box > .el-message-box__header {
+  padding: 12px 10px 12px 20px;
+}
+
+body .el-message-box > .el-message-box__header > .el-message-box__title {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+body .el-message-box > .el-message-box__header > .el-message-box__headerbtn {
+  top: 10px;
+  right: 10px;
+}
+
+body .el-message-box > .el-message-box__header > .el-message-box__headerbtn > .el-message-box__close {
+  font-weight: bold;
+}
+
+body .el-message-box > .el-message-box__content {
+  padding: 10px 15px;
+}
+
+body .el-message-box > .el-message-box__content > .el-message-box__status {
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  font-size: 40px !important;
+  text-align: center;
+  line-height: .9;
+  margin-bottom: -40px;
+}
+
+body .el-message-box > .el-message-box__content > .el-message-box__message {
+  margin-top: 40px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body .el-message-box > .el-message-box__content > .el-message-box__message .el-message-box__body__leaf {
+  font-size: 12px;
+  color: #999999;
+}
+
+body .el-message-box > .el-message-box__btns {
+  padding: 20px 15px 0px;
+  text-align: center;
+}
+
+body .el-message-box > .el-message-box__btns .el-button {
+  padding: 8px 25px !important;
+}
+
+body .el-message-box.el-confirm {
+  border-radius: 10px 10px 5px 5px;
+  overflow: inherit;
+}
+
+body .el-message-box.el-confirm .el-message-box__header {
+  background-color: #347EFF;
+  border-radius: 5px 5px 0px 0px;
+}
+
+body .el-message-box.el-confirm .el-message-box__header > .el-message-box__headerbtn > .el-message-box__close {
+  color: #FFFFFF;
+}
+
+body .el-message-box.el-confirm > .el-message-box__content > .el-message-box__status {
+  margin-top: 30px;
+}
+
+body .el-message-box.el-confirm > .el-message-box__content .el-message-box__body__primary {
+  color: #347EFF;
+}
+
+body .el-message-box.el-confirm > .el-message-box__content .el-message-box__body__info {
+  color: #8da7b8;
+}
+
+body .el-message-box.el-confirm > .el-message-box__content .el-message-box__body__warning {
+  color: #E6A23C;
+}
+
+body .el-message-box.el-confirm > .el-message-box__content .el-message-box__body__danger {
+  color: #FF5050;
+}
+
+body .el-dialog {
+  border-radius: 10px 10px 5px 5px;
+}
+
+body .el-dialog > .el-dialog__header {
+  background-color: #347EFF;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 10px 8px 20px;
+  line-height: 1;
+}
+
+body .el-dialog > .el-dialog__header > .el-dialog__title {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+body .el-dialog > .el-dialog__header > .el-dialog__headerbtn {
+  top: 10px;
+  right: 10px;
+}
+
+body .el-dialog > .el-dialog__header > .el-dialog__headerbtn > .el-dialog__close {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+body .el-dialog > .el-dialog__body {
+  line-height: 1;
+  padding: 20px 30px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+body .el-dialog > .el-dialog__footer {
+  text-align: center;
+  padding: 20px 30px 40px 30px;
+}
+
+body a {
+  cursor: pointer;
+}
+
+body a[type=text] {
+  font-size: 12px;
+  color: #999999;
+}
+
+body a[type=link] {
+  text-decoration: underline;
+  color: #666666;
+  font-size: 14px;
+}
+
+body a[type=btn] {
+  font-size: 14px;
+  color: #666666;
+}
+
+body a[type=btn][color=danger]:hover, body a[type=btn][color=danger]:focus {
+  color: #FF5050;
+}
+
+body a[type=btn][color=danger]:active {
+  color: #e64848;
+}
+
+body a[type=btn][color=primary] {
+  color: #347EFF;
+}
+
+body a[type=btn][color=primary]:hover, body a[type=btn][color=primary]:focus, body a[type=btn][color=primary]:active {
+  color: #2f71e6;
+}
+
+body a:hover, body a:focus {
+  color: #347EFF;
+}
+
+body a:active {
+  color: #2f71e6;
+}
+
+/*常用样式*/
+.mb0 {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=globalVars.css.map */

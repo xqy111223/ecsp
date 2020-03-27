@@ -1,0 +1,20 @@
+.live-list {
+  .live-list__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .live-list__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -18px;
+
+    > div {
+      margin-top: 30px;
+    }
+  }
+}

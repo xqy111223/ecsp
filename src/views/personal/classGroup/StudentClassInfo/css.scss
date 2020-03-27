@@ -1,0 +1,86 @@
+.student-class-info {
+  .hide {
+    display: none;
+  }
+
+  .title-tabs {
+    margin-top: 40px;
+    padding: 0px 10px;
+  }
+
+  .person-type {
+    padding: 10px;
+    color: #000;
+
+    .type-title {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .block-control {
+      height: 24px;
+      box-sizing: border-box;
+      background: linear-gradient(to bottom, #fff 0%, #f3f5f6 100%);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      text-align: center;
+      margin-top: -1px;
+      color: #d3dce6;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(to bottom, #f0f3f4 0%, #d7dde0 100%);
+      }
+
+      i {
+        font-size: 22px;
+        color: #aaa;
+        transform: scale(1.5, 1)
+      }
+    }
+  }
+
+  .person-card.auto {
+    max-height: none;
+  }
+
+  .person-card {
+    display: flex;
+    text-align: center;
+    flex: none;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: hidden;
+    max-height: 360px;
+
+    .block {
+      flex: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-grow: 0;
+      width: 20%;
+      margin-bottom: 30px;
+
+      .detail {
+        display: block;
+        margin-left: 10px;
+        text-align: left;
+        line-height: 24px;
+        width: 110px;
+
+        p {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          word-break: keep-all;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .teacher-list {
+    max-height: 180px;
+  }
+}

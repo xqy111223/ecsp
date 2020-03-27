@@ -1,0 +1,132 @@
+.class-student-mgt {
+  .mr5 {
+    margin-right: 5px;
+  }
+
+  .ml5 {
+    margin-left: 5px;
+  }
+
+  .c666 {
+    color: #888;
+  }
+
+  .bread-crumb {
+    background-color: #f6f7fb;
+    margin: -10px;
+    padding-bottom: 20px;
+  }
+
+  .page-title-warp-2 {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+
+  .page-title-two:before {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    background: #444;
+    content: '';
+    float: left;
+    margin-top: 8px;
+    margin-right: 5px;
+  }
+
+  .mt10 {
+    margin-top: 10px;
+  }
+
+  /deep/ .el-cascader .el-input {
+    width: 150px;
+  }
+
+  .margin-10 {
+    margin: auto 10px;
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .pl-delete-btn {
+    margin-top: -12px;
+    margin-right: 20px;
+  }
+
+  .table-total {
+    overflow: hidden;
+    font-size: 12px;
+    color: #666;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .blue {
+      color: #347eff;
+    }
+  }
+
+  .search-area {
+    @extend .margin-10;
+    padding-top: 20px;
+    border-bottom: 1px dashed #dcdcdc;
+  }
+
+  .table-area {
+    @extend .margin-10;
+
+    .export-text-btn {
+      @extend .fr;
+      font-size: 14px;
+      color: #666;
+      cursor: pointer;
+
+      .iconfont {
+        font-size: 14px;
+        margin-right: 5px;
+        color: #999;
+      }
+    }
+  }
+
+  /deep/ .el-table__row {
+    height: 40px;
+
+    .cell {
+      /*white-space: nowrap;*/
+    }
+
+    .status-normal, .status-closed {
+      position: relative;
+      padding-left: 10px;
+    }
+
+    .status-normal::before, .status-closed::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: inline-block;
+      margin-top: -3px;
+      width: 6px;
+      height: 6px;
+      content: '';
+      background-color: #61ca93;
+      border-radius: 3px;
+    }
+
+    .status-closed::before {
+      background-color: #BBB;
+    }
+
+    a[type=btn] {
+      margin: 0px 5px;
+    }
+  }
+
+  .pagination-right {
+    margin-top: 40px;
+    text-align: right;
+    margin-bottom: 40px;
+  }
+}

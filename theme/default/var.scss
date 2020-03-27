@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* 阔地全局变量定义 */
+$primary-color: #347EFF; /* 整体主题色 */
+$font-theme-font-color: #FFFFFF; /*主题字体颜色 搭配$primary-color*/
+$main-bg-color: rgba(52, 126, 255, 1); /*header等头部主题色*/
+$main-bg--hover-color: rgba(52, 126, 255, 0.6); /*header等头部移入色*/
+$main-bg--active-color: rgba(52, 126, 255, 0.6); /*header等头部按钮 点击色*/
+
+/* 字体类 */
+$font-normal-color: #333333; /*字体默认状态*/
+$font-hover-color: #347EFF; /*鼠标移入状态*/
+$font-disable-color: #999999; /*字体不可点状态*/
+$font-label-color: #666666; /*字体 ，描述说明等 label*/
+$font-danger-color: #FF5050; /*字体，警告类 */
+$font-small-size: 12px;
+$font-normal-size: 14px;
+$font-strong-size: 18px;
+$font-big-size: 24px;
+
+:root {
+  --primary-color: #347EFF; /* 整体主题色 */
+  --font-theme-font-color: #FFFFFF; /*主题字体颜色 搭配$primary-color*/
+  --main-bg-color: rgba(52, 126, 255, 1); /*header等头部主题色*/
+  --main-bg--hover-color: rgba(51, 92, 255, 0.4); /*header等头部移入色*/
+  --main-bg--active-color: #335cff; /*header等头部按钮 点击色*/
+  --font-normal-color: #333333; /*字体默认状态*/
+  --font-hover-color: #347EFF; /*鼠标移入状态*/
+  --font-disable-color: #999999; /*字体不可点状态*/
+  --font-label-color: #666666; /*字体 ，描述说明等 label*/
+  --font-danger-color: #FF5050; /*字体，警告类 */
+  --font-small-size: 12px;
+  --font-normal-size: 14px;
+  --font-strong-size: 18px;
+}
+
+.cy-info {
+  background: $primary-color;
+  background: var(--primary-color);
+  color: $font-theme-font-color;
+  color: var(--font-theme-font-color);
+}

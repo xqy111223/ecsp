@@ -1,0 +1,107 @@
+.live-card {
+  width: 273px;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.15s;
+
+  &:hover {
+    transform: translateY(-10px)
+  }
+
+  .live-card__status {
+    width: 64px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 11px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 11px;
+    color: white;
+  }
+
+  .live-card__status[status=INIT] {
+    background-color: #f8b642;
+  }
+
+  .live-card__status[status=PROCESS] {
+    background-color: #00cfbe;
+  }
+
+  .live-card__status[status=COMING] {
+    background-color: #f88b42;;
+  }
+
+  .live-card__status[status=END] {
+    background-color: #bbbbbb;
+  }
+
+  .live-card__title {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .live-card__region {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .live-card__school {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .live-card__datetime {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: -5px;
+  }
+
+  .live-card__teacher {
+    margin-top: 15px;
+    height: 36px;
+    line-height: 36px;
+
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+
+  .live-card__button {
+    margin-top: 10px;
+    border-top: 1px solid #e8ecf0;
+    padding-top: 15px;
+    text-align: center;
+    color: #00cfbe;
+    font-size: 16px;
+
+    i {
+      font-size: 21px;
+    }
+
+    line-height: 25px;
+  }
+
+  .el-button {
+    display: none;
+  }
+
+  &:hover {
+    .el-button {
+      display: inline-block;
+    }
+
+    .live-card__button span {
+      display: none;
+    }
+  }
+}

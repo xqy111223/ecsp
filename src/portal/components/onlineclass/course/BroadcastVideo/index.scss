@@ -1,0 +1,111 @@
+li {
+  list-style: none;
+}
+
+.hide {
+  display: none;
+}
+
+.bro-video-area {
+  width: 960px;
+  background: #fff;
+  margin-top: 24px;
+  height: 688px;
+  .tab {
+    height: 40px;
+    background-color: #fcfcfc;
+    font-size: 0;
+    color: #8696ac;
+    border-top: 1px solid #dee2e4;
+    border-right: 1px solid #dee2e4;
+    border-bottom: 1px solid #dee2e4;
+    box-sizing: border-box;
+    li {
+      font-size: 14px;
+      display: inline-block;
+      width: 160px;
+      background: #fcfcfc;
+      height: 38px;
+      line-height: 38px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-top: -2px;
+      cursor: pointer;
+      border-left: 1px solid #dee2e4;
+    }
+    li:nth-child(1) {
+      &.on {
+        background: #fff;
+        border-top: 2px solid #347eff;
+        border-right: 1px solid #dee2e4;
+        border-left: none;
+        height: 41px;
+      }
+
+    }
+    li:nth-child(2) {
+      border-left: none;
+      &.on {
+        background: #fff;
+        border-top: 2px solid #347eff;
+        border-right: 1px solid #dee2e4;
+        border-left: 1px solid #dee2e4;
+        height: 41px;
+      }
+    }
+  }
+}
+
+.video-box {
+  margin-top: 10px;
+  width: 940px;
+  margin-left: 10px;
+  .video-main, .video-avtive {
+
+  }
+  .video-pieces {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #333;
+    span {
+      display: inline-block;
+      width: 40px;
+      height: 30px;
+      line-height: 28px;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: #fcfcfc;
+      border: solid 1px #dcdcdc;
+      margin-left: 10px;
+      cursor: pointer;
+      position: relative;
+      .video-on {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        background-color: #d6e5ff;
+        border: solid 1px #347eff;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 7px;
+          width: 0;
+          left: 16px;
+          height: 0;
+          border-style: solid;
+          border-width: 7px 8px;
+          border-color: transparent transparent transparent #347eff;
+
+        }
+      }
+    }
+    .video-on {
+      background-color: #d6e5ff;
+      border: solid 1px #347eff;
+    }
+  }
+}

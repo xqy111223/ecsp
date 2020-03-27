@@ -1,0 +1,67 @@
+.grade-statistics {
+  .margin-10 {
+    margin: auto 10px;
+  }
+
+  .mb20 {
+    margin-bottom: 20px;
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .ml20 {
+    margin-left: 20px;
+  }
+
+  .pl-delete-btn {
+    margin-top: -12px;
+    margin-right: 20px;
+  }
+
+  .table-total {
+    overflow: hidden;
+    font-size: 12px;
+    color: #666;
+    line-height: 28px;
+
+    .blue {
+      color: #347eff;
+    }
+  }
+
+  .search-area {
+    @extend .margin-10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #dcdcdc;
+    margin-bottom: 15px;
+  }
+
+  .table-area {
+    @extend .margin-10;
+
+    .export-text-btn {
+      @extend .fr;
+      font-size: 14px;
+      color: #666;
+      cursor: pointer;
+
+      .iconfont {
+        font-size: 14px;
+        margin-right: 5px;
+        color: #999;
+      }
+    }
+
+    /deep/ .el-table__footer-wrapper td {
+      border-top: none;
+      font-weight: bold;
+    }
+
+    /deep/ .el-table th.is-leaf, /deep/ .el-table td {
+      border-bottom: none;
+    }
+  }
+}

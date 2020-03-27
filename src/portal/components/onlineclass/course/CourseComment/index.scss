@@ -1,0 +1,179 @@
+$ft14: 14px;
+$ft12: 12px;
+$c33: #333;
+$c66: #666;
+$c99: #999;
+$c44: #444;
+$c347: #347eff;
+
+.w1200 {
+  width: 1200px;
+}
+
+.mauto {
+  margin: 0 auto
+}
+
+.fr {
+  float: right;
+}
+
+.ft12 {
+  font-size: $ft12;
+}
+
+.ft14 {
+  font-size: $ft14;
+}
+
+.c66 {
+  color: $c66;
+}
+
+.c99 {
+  color: $c99;
+}
+
+.c33 {
+  color: $c33;
+}
+
+.hide {
+  display: none;
+}
+
+.w850 {
+  width: 850px !important;
+}
+
+.w740 {
+  width: 740px !important;
+}
+
+.ml70 {
+  margin-left: 70px;
+}
+
+li {
+  list-style: none;
+}
+
+.show {
+  display: inline-block !important;
+}
+
+.comment-box {
+  width: 960px;
+  padding: 20px;
+  border-top: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  background: #fff;
+  .more-comment {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      color: #347eff;
+    }
+  }
+  .list-comment {
+    margin-top: 46px;
+    border-top: 1px solid #eee;
+    min-height: 472px;
+    li {
+      width: 920px;
+    }
+    .total {
+      font-size: $ft14;
+      margin-top: 20px;
+      color: $c33;
+      > span {
+        color: $c99;
+        margin-left: 10px;
+      }
+    }
+    .list-container {
+      padding-bottom: 20px;
+      .item {
+        border-bottom: 1px solid #eee;
+        padding: 30px 0;
+      }
+      .com-avator {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        background: #40d688;
+      }
+      .com-content {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: $ft14;
+        color: $c33;
+        width: 847px;
+        .com-info {
+          display: inline-block;
+          .name {
+            font-size: $ft12;
+            color: #347eff;
+          }
+          .time {
+            font-size: $ft12;
+            color: #999;
+            margin-left: 20px;
+            display: inline-block;
+          }
+        }
+        .com-handle {
+          float: right;
+          font-size: $ft12;
+          color: #666;
+          .com-delete, .com-replay, .com-close {
+            display: none !important;
+          }
+          .com-delete.show, .com-replay.show, .com-close.show {
+            display: inline-block !important;
+          }
+          .com-delete:hover, .com-replay:hover, .com-close:hover {
+            color: #347eff;
+            cursor: pointer;
+          }
+          .com-replay {
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+        .content {
+          margin-top: 16px;
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+  .com-leve-item {
+    font-size: 0;
+    clear: both;
+    .add-comment {
+      margin-top: 23px;
+      height: 72px;
+    }
+  }
+
+  // 二级评论
+  .com-level2 {
+    width: 850px;
+    margin-left: 70px;
+    .com-level-items {
+      background: #f6f7fb;
+      clear: both;
+      width: 100%;
+      padding: 0 20px 20px;
+      box-sizing: border-box;
+      margin-top: 20px;
+      .com-leve-item {
+        border-bottom: none;
+        padding: 20px 0;
+      }
+    }
+  }
+}
